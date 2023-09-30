@@ -1,6 +1,6 @@
 import React from 'react';
 
-var todoList = [
+let todoList = [
   {
     id: 1,
     title: "Wake up"
@@ -17,11 +17,14 @@ var todoList = [
 
 function App() {
   return(
-  <ul>
-    {todoList.map( (item) =>
-       <li key={item.id}>{item.title}</li>
-    )}
-  </ul>
+    <span>
+      <h1>ToDo List</h1>
+      <ul>
+        {todoList.map( (item) =>
+          <li key={item.id}>{item.title}</li>
+        )}
+      </ul>
+    </span>
   )
 };
 
