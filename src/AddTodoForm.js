@@ -1,15 +1,17 @@
-import React from 'react';
+import React from "react";
 
-let AddTodoForm = () => {
-    return (
-        <div>
-            <form>
-                <label htmlFor="todoTitle">Title:</label><br />
-                <input type="text" id="todoTitle" required /><br />
-            </form>
-            <button>Add</button>
-        </div>
-    );
-}
+const AddTodoForm = () => {
+  return (
+    <div>
+      <form>
+        <label htmlFor="todoTitle">Title:</label>
+        <br />
+        <input type="text" id="todoTitle" required />
+        <br />
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  );
+};
 
 export default AddTodoForm;
