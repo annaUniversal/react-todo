@@ -9,7 +9,7 @@ function App() {
     <div>
       <h1>ToDo List</h1>
       <AddTodoForm onAddTodo ={setNewTodo}/>
-      <p>&{newTodo} </p>
+      <p>{newTodo} </p>
       <TodoList />
     </div>
   );
