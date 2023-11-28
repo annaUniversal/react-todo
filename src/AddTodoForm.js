@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddTodoForm = (props) => {
+const AddTodoForm = (addTodoForm) => {
   const [todoTitle, setTodoTitle] = useState(""); // Initialize todoTitle state with an empty string
 
   const handleTitleChange = (event) => {
@@ -12,7 +12,7 @@ const AddTodoForm = (props) => {
     event.preventDefault();
     console.log(todoTitle);
 
-    props.onAddTodo({ title: todoTitle, id: Date.now() });
+    addTodoForm.onAddTodo({ title: todoTitle, id: Date.now() });
 
     // Reset the todoTitle state to an empty string
     setTodoTitle(""); // Reset the todoTitle state to an empty string
