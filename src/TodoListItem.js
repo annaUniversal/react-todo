@@ -1,13 +1,15 @@
 import React from "react";
 
-const TodoListItem = ({todoListItem, onRemoveTodo}) => {
+const TodoListItem = ({ todo, onRemoveTodo }) => {
+  console.log(onRemoveTodo);
   const handleOnRemove = () => {
     onRemoveTodo(todo.id);
   };
 
   return (
     <li>
-      {todoListItem.todo.id} {todoListItem.todo.title}
+      {todo.id}
+      {todo.title}
       <button type="button" onClick={handleOnRemove}>
         Remove
       </button>

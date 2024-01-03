@@ -25,7 +25,8 @@ const AddTodoForm = (addTodoForm) => {
         <InputWithLabel
           /* label="Title"  */
           todoTitle={todoTitle}
-          handleTitleChange={handleTitleChange}>
+          handleTitleChange={handleTitleChange}
+        >
           Title
         </InputWithLabel>
         <button type="submit">Add</button>
